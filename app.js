@@ -73,7 +73,7 @@ app.get('/compose', (req, res) => {
 
 // Post routes
 app.post('/login', (req, res) => {
-    if(process.env.BLOG_USERNAME === req.body.username && process.env.BLOG_PASSWORD === req.body.password){
+    if(req.body.username == 'admin' && req.body.password == 'admin-password'){
         loggedIn = true;
         res.redirect('/blogs');
         console.log(loggedIn);
