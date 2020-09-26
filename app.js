@@ -131,4 +131,4 @@ app.get('/share/:postId', (req, res) => {
 
 
 
-app.listen(3000, console.log('server is live'));
+app.listen(process.env.PORT || 3000, console.log('server is live'));
