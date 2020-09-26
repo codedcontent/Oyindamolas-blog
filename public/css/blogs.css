@@ -1,0 +1,47 @@
+
+
+.blog-div .rating {
+    float: left;
+    background-color: #F4A400;
+    border-radius: 5px;
+    padding: 3px;
+    box-shadow: 5px 5px #D07500;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: none;
+    color: whitesmoke;
+}
+
+.blog-div .rating:hover {
+    transform: scale(1.1);
+}
+
+.blog-div .control {
+    border: none;
+    float: right;
+    background-color: #F4A400;
+    border-radius: 5px;
+    padding: 4px;
+    box-shadow: 5px 5px #D07500;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: whitesmoke;
+    transition: transform 0.2s;
+}
+
+.blog-div .control:hover {
+    transform: scale(1.5);
+}
+
+.control a {
+    color: whitesmoke;
+}
+
+.clear {
+    clear: both;
+}
+
+
+.blog-div {
+    margin: 5% auto;
+}

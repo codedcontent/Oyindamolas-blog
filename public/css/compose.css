@@ -1,0 +1,60 @@
+/* 
+body, html {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+
+.navbar .nav-link {
+    color: whitesmoke;
+}
+
+.navbar .navbar-brand {
+    color: whitesmoke;
+}
+
+
+#post-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+input, textarea, #submit-btn {
+    display: block;
+    width: 100%;
+}
+*/
+
+input {
+  height: 70px;
+  margin-bottom: 10px;
+}
+
+textarea {
+  min-height: 400px;
+  margin-bottom: 10px;
+}
+
+form {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+}
+
+#submit-btn {
+  background-color: #d07500;
+}
+
+input:focus {
+  box-shadow: 0 0 5pt 3pt #f1a502;
+}
+
+textarea:focus {
+  box-shadow: 0 0 5pt 3pt #f1a502;
+}
