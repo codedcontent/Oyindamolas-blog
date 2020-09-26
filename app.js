@@ -103,6 +103,7 @@ app.post('/delete', (req, res) => {
     Blog.findByIdAndRemove(blogId, (err) => {
         if(err){
             console.log(err);
+            res.send("<h1>This Blog Post dosen't exist or has been deleted be the owner</h1>");
         }else {
             console.log('removed the blog successfully');
             res.redirect('/blogs');
@@ -116,6 +117,7 @@ app.get('/share/:postId', (req, res) => {
     Blog.findById(postId, (err, post) => {
         if(err){
             console.log(err);
+            res.send("<h1>This Blog Post dosen't exist or has been deleted be the owner</h1>");
         }else {
             post.views += 1;
             post.save();
