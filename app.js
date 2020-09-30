@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static('public'));
 
 // Connect to the database
-mongoose.connect('mongodb+srv://admin-oge:PceD6930ZjAGo6eG@cluster0.7jm4t.mongodb.net/trustblogDB?retryWrites=true&w=majority', {useUnifiedTopology: true, useNewUrlParser: true});
+mongoose.connect(process.env.MONGODB_URI, {useUnifiedTopology: true, useNewUrlParser: true});
 // Creating the blogs schema
 const blogSchema = new mongoose.Schema({
     title: String,
